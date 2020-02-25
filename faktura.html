@@ -1,0 +1,130 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript">
+        function elo() {
+            var divContents = $("#dvContainer").html();
+            var printWindow = window.open('', '', 'height=400,width=800');
+            printWindow.document.write('<html><head><title>The Fridge</title>');
+            printWindow.document.write('</head><body >');
+            printWindow.document.write(divContents);
+            printWindow.document.write('</body></html>');
+            printWindow.document.close();
+            printWindow.print();
+        };
+    </script>
+    <style> 
+    td 
+    { 
+      border: 1px solid black; 
+    } 
+    th
+    {
+      font-weight: normal;
+      font: 15px arial, sans-serif;
+    }
+
+    </style>
+</head>
+<body onload="elo();">
+    <form id="form1">
+    <div id="dvContainer">
+			<p style="text-align:right;"> Data wystawienia:</p>
+			<p style="text-align:right;"> Data sprzedaży:</p>
+			<h1 style="text-align:center;">The Fridge</h1>
+         <p style="text-align:center;"> Faktura VAT nr: FV/5/2009</p>
+         <table >
+            <tbody>
+                 <tr>
+                    <th style="text-align:left;"><b>Sprzedawca:</b> </th> 
+                    <th style="text-align:left;">The Fridge</th> 
+                    <th style="text-align:left;" ><b>Nabywca:</b></th> 
+                    <th style="text-align:left;">Aleksandra Dura</th> 
+                 </tr>
+               </tbody>
+              <tbody>
+                 <tr>
+                  <th style="text-align:left;"><b>Adres:</b></th>
+                  <th style="text-align:left;">ul. Ślężna 5 99-000 Wrocław</th> 
+                  <th style="text-align:left;"><b> Adres:</b></th> 
+                  <th style="text-align:left;"></th> 
+                 </tr>
+                 
+              </tbody>
+              <tbody>
+               <tr>
+                <th style="text-align:left;"><b>NIP:</b> </th>
+                <th style="text-align:left;"> 999-999-99-99</th> 
+                <th style="text-align:left;"><b>   NIP:</b></th> 
+                <th style="text-align:left;;"></th> 
+               </tr>
+               
+            </tbody>
+           </table>
+		  
+
+
+		  
+          <table Border=1>
+              <thead>
+                 <tr>
+                    <th>Lp.</th><th>Nazwa towaru lub usługi</th> <th>Ilość</th> <th>l.m.</th> <th>Cena netto</th> <th>Stawka VAT%</th> <th>Wartość netto</th> <th>Wartość VAT</th><th>Wartość brutto</th>
+                 </tr>
+              </thead>
+              <tbody>
+                 <tr>
+                    <th>1.</th><th>Lodówka</th> <th>1</th> <th>szt.</th> <th>200</th> <th>22%</th> <th>200</th> <th>20</th><th>220</th>
+                 </tr>
+                 
+              </tbody>
+           </table>
+
+           <table >
+            <tbody>
+                 <tr>
+                    <th style="text-align:left;"><b>Do zapłaty:</b> </th> 
+                    <th style="text-align:left;">  </th> 
+                 </tr>
+               </tbody>
+              <tbody>
+                 <tr>
+                  <th style="text-align:left;"><b>Sposób zapłaty:</b></th>
+                  <th style="text-align:left;"> przelew</th> 
+                 </tr>  
+              </tbody>
+              <tbody>
+               <tr>
+                <th style="text-align:left;"><b>Termin zapłaty:</b> </th>
+                <th style="text-align:left;"> </th> 
+               </tr>
+            </tbody>
+            <tbody>
+               <tr>
+                <th style="text-align:left;"><b>Bank:</b> </th>
+                <th style="text-align:left;"> 999-999-99-99</th> 
+               </tr>
+            </tbody>
+            <tbody>
+               <tr>
+                <th style="text-align:left;"><b>Nr. konta:</b> </th>
+                <th style="text-align:left;"> 555550000000000000000008888888</th> 
+               </tr>
+            </tbody>
+           </table>
+					 
+
+			
+            <pre style="text-align:left;font-family:verdana;">  <b>Wystawca:</b> The Fridge				     <b>Odbiorca:</b>....................</pre>
+
+
+			
+				
+				  </div>
+		  
+		  </div>
+    </div>
+
+    </form>
+</body>
+</html>

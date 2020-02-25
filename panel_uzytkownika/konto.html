@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pl">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/aileron" type="text/css"/>
+<head>
+    <style>
+    html, body{
+        background: url(images/bg.png) no-repeat center center fixed;
+        background-size: cover;
+        height: 100%;
+        margin:0;
+    }
+    
+    header {
+        
+        text-align: center;
+        padding: 1%;
+        color:black;
+        text-transform: uppercase;
+        text-shadow:0 2px 2px #b1b1b1;
+        font-family: "Aileron"; 
+        font-size: 35px; 
+        font-style:normal; 
+        font-weight: bold; 
+        
+    }
+
+    .container{
+        position: relative;
+        background-color: white;
+        max-width: 1200px;
+        width: auto;
+        height: auto;
+        margin: auto;
+        display:block;
+        box-shadow: 0 0 5px #ececec;
+    }
+    #nagl {
+        position:relative;
+        overflow:hidden;
+        list-style:none; 
+        padding: 5pt 0pt 0pt;
+        background-color: white;
+        }
+    #nagl a{
+            float:right;
+            padding: 1%
+        }
+
+    .stopka{
+        overflow: hidden;
+        position: fixed;
+        bottom:0;
+        background-image: linear-gradient(#ffffff, #3b4652);
+        width:100%;
+        height: auto;
+        display: block;
+        list-style: none;
+        box-shadow: 0  5px #ececec;
+
+    }
+    .stopka #kolumna{
+        display: block;
+        width:50%;
+    }
+    #topnav {
+        width: auto;
+        padding: 10px 0 0 0;
+        list-style: none;  
+        background-image: linear-gradient(#ffffff, rgb(153, 255, 255));
+        border-radius: 50px;
+        box-shadow: 0 2px 1px #ececec;
+        position: relative;
+        overflow: hidden;        
+        text-align: center;
+    }
+    #topnav ul{
+        display:inline-block;
+        list-style:none; 
+    }
+    #topnav li{
+        display:inline;
+    }
+
+    #topnav  a {
+        height: 25px;
+        padding: 0 25px;
+        text-transform: uppercase;
+        text-decoration: none;
+        text-shadow: 0 1px 0 #000;
+        margin:1px 0 0 -2px;
+        float: left;
+        border-right: 2px solid rgb(153, 255, 255);
+        border-left: 2px solid rgb(153, 255, 255);
+        color:black;
+        padding: 0px 40px 0px;
+        text-decoration:none;
+        font-family: "Aileron";
+        font-weight: bold;
+        font-size: 22px;
+    }
+    * {
+  box-sizing: border-box;
+}   
+    #row:after{
+        content:" ";
+        display: table;
+        clear: both;
+    }
+    .column {
+    position: relative;
+    float: left;
+    height: auto;
+    padding: 10px;
+    }
+    .middle {
+        width: 50%;
+        text-align: center;
+        
+    }
+    .middle header img{
+        max-width: 75%;
+        min-width: 40%;
+        width: auto;
+        
+   }
+    .middle a img{
+        max-width: 100%;
+        min-width: 60%;
+        width: auto;
+        
+         }
+    .left,.right{
+        width: 25%;
+    }
+    
+    .right img{
+        margin-top: 100%;
+        width: 75%;
+        
+}
+#ver_Nav ul {
+    list-style-type: none;
+  margin: 10000;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+}
+
+#ver_Nav li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+#ver_Nav li a.active {
+  background-color: rgb(169, 248, 248);
+  color: black;
+}
+
+#ver_Nav li a:hover:not(.active) {
+  background-color: rgb(153, 255, 255);
+  color: black;
+}
+
+
+
+    
+    </style>
+    <title>
+        Sklep z sprzętem AGD. LODÓWKI
+    </title>
+</head>
+<body>
+    
+    <div class="container">
+    <div id="nagl">
+            <img src="../images/fridge.png" alt="Uzytkownik"  height="70"  margin=0  >
+      
+                <a href="../LogIn/index.html"><img src="../images/login.png" alt="Logowanie" width="30" height="30" ></a>
+                <a href="../koszyk/index.html"><img src="../images/koszyk.jpg" alt="Twój koszyk" width="30" height="30"  ></a>
+    </div>
+    <div id="topnav">
+        <ul>
+            <li><a href="#Yay">Home</a></li>
+            <li><a href="#Meh"> Oferta</a></li>
+            <li><a href="#Meme">Informacje</a></li>
+            <li><a href="../kontakt/index.html">Kontakt</a></li>
+        </ul>
+    </div>
+    <div id="row">
+        <div class="column left">
+                <nav id="ver_Nav">
+                        <ul>
+                                <li><a class="active" href="#home">Moje konto</a></li>
+                                <li><a href="./MojeZamowienia/MojeZamowienia.html">Moje zamówienia</a></li>
+                                <li><a href="./MojeDane/MojeDane.html">Moje dane</a></li>
+                                <li><a href="./MojeAdresy/MojeAdresy.html">Moje adresy</a></li>
+                                <li><a href="./PomocIKontakt/PomocIKontakt.html">Pomoc i kontakt</a></li>
+                              </ul>
+                 </nav>
+                      
+    </div>
+    <div class="column middle">
+        <header>Witaj</header>
+        w Twoim profilu, gdzie możesz zarządzać zamówieniami, fakturami oraz ustawieniami konta.
+      
+</ul>
+
+
+    </div>
+    <div class="column right">
+        
+        
+    </div>  
+    </div>
+    <div class="stopka">
+        <div id="kolumna">
+            La la
+        </div>
+        <div id="kolumna">
+            Motorówka
+        </div>
+    </div>
+</div>
+</body>
+</html>

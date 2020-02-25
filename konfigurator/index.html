@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="pl">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/aileron" type="text/css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<head>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <style>
+        html, body {
+            background: url(/lib/images/bg.png) no-repeat center center fixed;
+            background-size: cover;
+            height: 100%;
+            margin: 0;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        header {
+            text-align: center;
+            padding: 1%;
+            color: black;
+            text-transform: uppercase;
+            text-shadow: 0 2px 2px #b1b1b1;
+            font-family: "Aileron";
+            font-size: 35px;
+            font-style: normal;
+            font-weight: bold;
+        }
+
+        select {
+            display: block;
+            width: 100%;
+            padding: 10px 20px;
+            margin: auto;
+            border: none;
+            border-radius: 4px;
+            background-color: #f1f1f1;
+        }
+
+        label {
+            font-family: "Aileron";
+            font-weight: bold;
+            font-size: 18px;
+            padding: 1%
+        }
+
+        form button, input {
+            margin: 5px 5px;
+            border: none;
+            border-radius: 4px;
+            background-color: #f1f1f1;
+        }
+
+        table {
+            overflow: scroll;
+            height: 30%;
+            margin: 5px 5px;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f1f1f1;
+        }
+
+        .containermax {
+            position: relative;
+            background-color: white;
+            max-width: 1200px;
+            width: auto;
+            height: auto;
+            margin: auto;
+            display: block;
+            box-shadow: 0 0 5px #ececec;
+        }
+
+        #nagl {
+            display: flex;
+            flex-direction: row;
+            overflow: hidden;
+            list-style: none;
+            padding: 5pt 0pt 0pt;
+            background-color: white;
+        }
+
+        .nagaa {
+            padding: 20px 7px;
+        }
+
+        #nagl a:hover, .dropdown1:hover .dropbtn1, .dropdown-content1 a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown1 {
+            margin-left: auto;
+            overflow: hidden;
+        }
+
+            .dropdown1 .dropbtn1 {
+                padding: 25px 7px;
+                border: none;
+                outline: none;
+                background-color: white;
+                margin: 0;
+            }
+
+        .dropdown-content1 {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+            .dropdown-content1 a {
+                float: none;
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+
+        .dropdown1:hover > .dropdown-content1 {
+            display: block;
+        }
+
+        #topnav {
+            width: auto;
+            padding: 10px 0 0 0;
+            list-style: none;
+            background-image: linear-gradient(#ffffff, rgb(153, 255, 255));
+            border-radius: 50px;
+            box-shadow: 0 2px 1px #ececec;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+        }
+
+            #topnav ul {
+                display: inline-block;
+                list-style: none;
+            }
+
+            #topnav li {
+                display: inline;
+            }
+
+            #topnav a {
+                height: 25px;
+                padding: 0 25px;
+                text-transform: uppercase;
+                text-decoration: none;
+                margin: 1px 0 0 -2px;
+                float: left;
+                border-right: 2px solid rgb(153, 255, 255);
+                border-left: 2px solid rgb(153, 255, 255);
+                padding: 0px 40px 0px;
+                text-decoration: none;
+                font-family: "Aileron";
+                font-weight: bold;
+                font-size: 22px;
+                color: black;
+                text-shadow: 0 1px 0 #ffffff;
+            }
+
+                #topnav a:hover {
+                    color: black;
+                    text-shadow: 0 1px 0 #000;
+                }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        #roww:after {
+            content: " ";
+            display: table;
+            clear: both;
+        }
+
+        .column {
+            float: left;
+            height: auto;
+            padding: 10px;
+        }
+
+        .middle {
+            width: 50%;
+            text-align: center;
+        }
+
+            .middle header img {
+                max-width: 75%;
+                min-width: 40%;
+                width: auto;
+            }
+
+            .middle a img {
+                max-width: 100%;
+                min-width: 60%;
+                width: auto;
+            }
+
+        .left, .right {
+            width: 25%;
+            text-align: center;
+        }
+        .mdb-color.lighten-3 {
+            background-image: linear-gradient(#ffffff, rgb(153, 255, 255));
+            color: #000;
+            font-family: "Aileron";
+            font-weight: bold;
+            text-shadow: #ffffff;
+        }
+
+
+        footer.page-footer a {
+            color: #000;
+        }
+    </style>
+    <title>
+        Sklep z sprzętem AGD. LODÓWKI
+    </title>
+</head>
+<script> function addRow(tableID,selectID) {
+    // Get a reference to the table
+    let table = document.getElementById(tableID);
+  
+    // Insert a row at the end of the table
+    let newRow = table.insertRow(-1);
+  
+    // Insert a cell in the row at index 0
+    let Cell1 = newRow.insertCell(0);
+    let Cell2 = newRow.insertCell(1);
+
+    var Lext=document.getElementById(selectID);
+    var opt=Lext.options[Lext.selectedIndex];
+    // Append a text node to the cell
+    let newText = document.createTextNode(opt);
+    let newText1 = document.createTextNode('Yay');
+
+    Cell1.appendChild(newText);
+    Cell2.appendChild(newText1);
+
+  }
+  </script>
+<body>
+    
+    <div class="containermax">
+    <div id="nagl">            
+      
+                <a><img src="../images/fridge.png" alt="Uzytkownik"  height="70"  margin=0  ></a>
+                <div class="dropdown1">
+                    <button class="dropbtn1"> 
+                        <i class="fa fa-caret-down" ></i>
+                    </button>         
+                    <div class="dropdown-content1">
+                    <a href="../panel_uzytkownika/konto.html">Moje konto</a>
+                    <a href="../panel_uzytkownika/MojeZamowienia/MojeZamowienia.html">Moje zamówienia</a>
+                    <a href="../panel_uzytkownika/MojeDane/MojeDane.html">Moje Dane</a>
+                    <a href="../panel_uzytkownika/MojeAdresy/MojeAdresy.html">Moje Adresy</a>
+                    <a href="../panel_uzytkownika/PomocIKontakt/PomocIKontakt.html">Kontakt</a>
+                    </div>
+                  </div>  
+                <a class="nagaa" href="../LogIn/index.html"><img src="../images/login.png" alt="Logowanie" width="30" height="30" ></a>
+
+                  <a class="nagaa" href="../koszyk/index.html"><img src="../images/koszyk.png" alt="Twój koszyk" width="30" height="30"  ></a>
+                </div>
+
+    <div id="topnav">
+        <ul>
+            <li><a href="../home.html">Home</a></li>
+            <li><a href="../#Meh"> Oferta</a></li>
+            <li><a href="../#Meme">Informacje</a></li>
+            <li><a href="../kontakt/index.html">Kontakt</a></li>
+        </ul>
+    </div>
+    <div id="roww">
+      <div class="column left">
+      </div>
+      <div class="column middle">
+          <form asp-page="./pofiltr.html" asp-action="Config" method="post">
+              <label>Zamrażarka</label> <br>
+              <input type="radio" asp-for="Freezer" name="zam" value="true"  /> Tak
+              <br />
+              <input type="radio" asp-for="Freezer" name="zam" value="false"  /> Nie
+              <br />
+              <label>Wymiary</label>
+              <select name="wymiar" asp-for="SelectedItemValue"
+                      asp-items="@(new SelectList(Model.Dimensions,"Value", "Text"))">
+                  <option value="">- Wymiary -</option>
+              </select>
+
+              <label>Kolor</label>
+              <select name="kolor" asp-for="SelectedColor"
+                      asp-items="@(new SelectList(Model.Colors, "Value", "Text"))">
+                  <option value="">- Kolor -</option>
+              </select>
+
+              <label>Typ drzwi</label>
+              <select name="drzwi" asp-for="SelectedDoorType"
+                      asp-items="@(new SelectList(Model.DoorTypes, "Value", "Text"))">
+                  <option value="">- Drzwi -</option>
+              </select>
+
+              <label>Klasa energetyczna</label>
+              <select name="klasa" asp-for="SelectedEnergyClass"
+                      asp-items="@(new SelectList(Model.EnergyClasses, "Value", "Text"))">
+                  <option value="">- Klasa energetyczna -</option>
+              </select>
+              <button type="submit">Filtruj</button>
+          </form>
+      </div>
+      <div class="column right">
+      </div>
+  </div>
+<!-- Footer -->
+<link rel="stylesheet" href="../Z.css">
+<footer class="page-footer font-small mdb-color lighten-3 pt-4">
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+    
+          <!-- Grid row -->
+          <div class="row">
+    
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
+    
+              <!-- Content -->
+              <h5 class="font-weight-bold text-uppercase mb-4">Parę słów</h5>
+              <p>Jesteśmy firmą działąjącą od niedawna, lecz to nie przeszkadza nam dostarczyć produkt najwyższej klasy.</p>
+              <p> Spraw, by twoja wymarzona lodówka przestała być marzeniem.</p>
+    
+            </div>
+            <!-- Grid column -->
+    
+            <hr class="clearfix w-100 d-md-none">
+    
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
+    
+              <!-- Links -->
+              <h5 class="font-weight-bold text-uppercase mb-4">O Nas</h5>
+    
+              <ul class="list-unstyled">
+                <li>
+                  <p>
+                    <a  href="#!">PROJECTS</a>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <a  href="#!">ABOUT US</a>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <a  href="#!">BLOG</a>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <a  href="#!">AWARDS</a>
+                  </p>
+                </li>
+              </ul>
+    
+            </div>
+            <!-- Grid column -->
+    
+            <hr class="clearfix w-100 d-md-none">
+    
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+    
+              <!-- Contact details -->
+              <h5 class="font-weight-bold text-uppercase mb-4">Adres</h5>
+    
+              <ul class="list-unstyled">
+                <li>
+                  <p>
+                    <i class="fas fa-home mr-3"></i> Wrocław, Ślężna 5</p>
+                </li>
+                <li>
+                  <p>
+                    <i class="fas fa-envelope mr-3"></i> info@example.com</p>
+                </li>
+                <li>
+                  <p>
+                    <i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+                </li>
+                <li>
+                  <p>
+                    <i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+                </li>
+              </ul>
+    
+            </div>
+            <!-- Grid column -->
+    
+            <hr class="clearfix w-100 d-md-none">
+    
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
+    
+              <!-- Social buttons -->
+              <h5 class="font-weight-bold text-uppercase mb-4">Społeczność</h5>
+    
+              <!-- Facebook -->
+              <a type="button" class="btn-floating btn-fb">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <!-- Twitter -->
+              <a type="button" class="btn-floating btn-tw">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <!-- Google +-->
+              <a type="button" class="btn-floating btn-gplus">
+                <i class="fab fa-google-plus-g"></i>
+              </a>
+              <!-- Dribbble -->
+              <a type="button" class="btn-floating btn-dribbble">
+                <i class="fab fa-dribbble"></i>
+              </a>
+    
+            </div>
+            <!-- Grid column -->
+    
+          </div>
+          <!-- Grid row -->
+    
+        </div>
+        <!-- Footer Links -->
+      </footer>
+      <!-- Footer -->
+    </div>
+ 
+</body>
+</html>

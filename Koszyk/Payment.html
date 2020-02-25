@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="pl">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/aileron" type="text/css"/>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+<meta name="robots" content="noindex,follow" />
+
+<head>
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <style>
+      
+    html, body{
+        background: url(../images/bg.png) no-repeat center center fixed;
+        background-size: cover;
+        height: 100%;
+        margin:0;
+        -webkit-tap-highlight-color: transparent;
+        font-family: 'Montserrat', sans-serif;
+         display: flex;
+        width: 100%;
+       justify-content: center;
+        align-items: center;
+    }
+    #kafelek{
+        text-align:center;
+        font-family: "Aileron"; 
+        font-size: 30px; 
+        font-style:normal; 
+        font-weight: bold; 
+        display:block;
+        height: 10%;
+        width:100%;
+        padding: 10px 20px;
+        margin: 2%;
+        border: none;
+        border-radius: 4px;
+        background-color: #f1f1f1;
+    }
+        #kafelek:hover {
+            background-color: #C0C0C0;
+        }
+    header {
+        
+        text-align: center;
+        padding: 1%;
+        color:black;
+        text-transform: uppercase;
+        text-shadow:0 2px 2px #b1b1b1;
+        font-family: "Aileron"; 
+        font-size: 35px; 
+        font-style:normal; 
+        font-weight: bold; 
+        
+    }
+    
+    .containermax{
+        position: relative;
+        background-color: white;
+        max-width: 1200px;
+        width: auto;
+        height: auto;
+        margin: auto;
+        display:block;
+        box-shadow: 0 0 5px #ececec;
+    }
+    #nagl{
+        display: flex;
+        flex-direction:row;
+        overflow:hidden;
+        list-style:none; 
+        padding: 5pt 0pt 0pt;
+        background-color: white;
+        }
+
+    .nagaa{
+      padding: 20px 7px;
+    }
+    #nagl a:hover, .dropdown1:hover .dropbtn1, .dropdown-content1 a:hover{
+        background-color: #ddd;
+    }
+    .dropdown1 {
+      margin-left: auto;
+      overflow: hidden;
+    }
+    .dropdown1 .dropbtn1{
+      padding: 25px 7px;
+      border: none;
+      outline: none;
+      background-color: white;
+      margin: 0;
+    }
+    .dropdown-content1 {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    .dropdown-content1 a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    .dropdown1:hover>.dropdown-content1 {
+      display: block;
+    }
+
+    #topnav {
+        width: auto;
+        padding: 10px 0 0 0;
+        list-style: none;  
+        background-image: linear-gradient(#ffffff, rgb(153, 255, 255));
+        border-radius: 50px;
+        box-shadow: 0 2px 1px #ececec;
+        position: relative;
+        overflow: hidden;        
+        text-align: center;
+    }
+    #topnav ul{
+        display:inline-block;
+        list-style:none; 
+    }
+    #topnav li{
+        display:inline;
+    }
+
+    #topnav  a {
+        height: 25px;
+        padding: 0 25px;
+        text-transform: uppercase;
+        text-decoration: none;
+        
+        margin:1px 0 0 -2px;
+        float: left;
+        border-right: 2px solid rgb(153, 255, 255);
+        border-left: 2px solid rgb(153, 255, 255);
+        
+        padding: 0px 40px 0px;
+        text-decoration:none;
+        font-family: "Aileron";
+        font-weight: bold;
+        font-size: 22px;
+        color:black;
+        text-shadow: 0 1px 0 #ffffff;
+    }
+    #topnav  a:hover{
+        color:black;
+        text-shadow: 0 1px 0 #000;
+    }
+    * {
+  box-sizing: border-box;
+    }   
+    #roww:after{
+        content:" ";
+        display: table;
+        clear: both;
+    }
+    .column {
+    position: relative;
+    float: left;
+    height: auto;
+    padding: 10px;
+    }
+    .middle {
+        width: 50%;
+        text-align: center;
+        
+    }
+    .middle header img{
+        max-width: 75%;
+        min-width: 40%;
+        width: auto;
+        
+   }
+    .middle a img{
+        max-width: 100%;
+        min-width: 60%;
+        width: auto;
+        
+         }
+    .left,.right{
+        width: 25%;
+    }
+    
+    .right img{
+        margin-top: 100%;
+        width: 75%;
+        
+}
+.mdb-color.lighten-3{
+  background-image: linear-gradient(#ffffff, rgb(153, 255, 255));
+  color: #000;
+  font-family: "Aileron";
+  font-weight: bold;
+  text-shadow: #ffffff;
+}
+footer.page-footer a{
+  color: #000;
+}
+    </style>
+    <title>
+        Sklep z sprzętem AGD. LODÓWKI
+    </title>
+</head>
+<body onload="show3();">
+    
+    <div class="containermax">
+        <div id="nagl">            
+          
+                    <a><img src="../images/fridge.png" alt="Uzytkownik"  height="70"  margin=0  ></a>
+                    <div class="dropdown1">
+                        <button class="dropbtn1"> 
+                            <i class="fa fa-caret-down" ></i>
+                        </button>         
+                        <div class="dropdown-content1">
+                        <a href="panel_uzytkownika/konto.html">Moje konto</a>
+                        <a href="panel_uzytkownika/MojeZamowienia/MojeZamowenia.html">Moje zamówienia</a>
+                        <a href="panel_uzytkownika/MojeDane/MojeDane.html">Moje Dane</a>
+                        <a href="panel_uzytkownika/MojeAdresy/MojeAdresy.html">Moje Adresy</a>
+                        <a href="panel_uzytkownika/PomocIKontakt/PomocIKontakt.html">Kontakt</a>
+                        </div>
+                      </div>  
+                    <a class="nagaa" href="../LogIn/index.html"><img src="../images/login.png" alt="Logowanie" width="30" height="30" ></a>
+    
+                      <a class="nagaa" href="../koszyk/index.html"><img src="../images/koszyk.png" alt="Twój koszyk" width="30" height="30"  ></a>
+                    </div>
+    
+        <div id="topnav">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="#Meh"> Oferta</a></li>
+                <li><a href="#Meme">Informacje</a></li>
+                <li><a href="kontakt/index.html">Kontakt</a></li>
+            </ul>
+        </div>
+        <div id="roww">
+           
+    
+    
+    
+            <div class="modal-dialog text-center">
+        
+                      <div class="modal-content">
+
+                            <form id="regForm" action="/action_page.php">
+
+                              
+                                <!-- One "tab" for each step in the form: -->
+                       
+                                    <div class="checkout-panel">
+                                        <div class="panel-body">
+                                       
+                                          <div class="progress-bar">
+                                            <div class="step "></div>
+                                            <div class="step"></div>
+                                            <div class="step"></div>
+                                            
+                                          </div>
+                                       
+                                          <div class="payment-method">
+                                            <label for="card" class="method card">
+                                              <div class="card-logos">
+                                                <img src="img/visa_logo.png"/>
+                                                <img src="img/mastercard_logo.png"/>
+                                              </div>
+                                       
+                                              <div class="radio-input">
+                                                <input id="card" type="radio" name="payment" onclick="show1();">
+                                                Zapłać 270 zł kartą kredytową
+                                              </div>
+                                            </label>
+                                       
+                                            <label for="paypal" class="method paypal">
+                                              <img src="img/paypal_logo.png"/>
+                                              <div class="radio-input">
+                                                <input id="paypal" type="radio" name="payment" onclick="show2();">
+                                                Zapłać 270 zł przez PayPal
+                                              </div>
+                                            </label>
+                                          </div>
+                                          <div id="div1" class="hide" display="none" >
+                                          <div class="input-fields">
+                                            <div class="column-1">
+                                              <label for="cardholder">Właściciel karty</label>
+                                              <input type="text" id="cardholder" />
+                                       
+                                              <div class="small-inputs">
+                                                <div>
+                                                  <label for="date">Ważna do</label>
+                                                  <input type="text" id="date" placeholder="MM / YY" />
+                                                </div>
+                                       
+                                                <div>
+                                                  <label for="verification">CVV / CVC *</label>
+                                                  <input type="password" id="verification"/>
+                                                </div>
+                                              </div>
+                                       
+                                            </div>
+                                            <div class="column-2">
+                                              <label for="cardnumber"> Numer karty</label>
+                                              <input type="password" id="cardnumber"/>
+                                       
+                                              <span class="info">* CVV or CVC is the card security code, unique three digits number on the back of your card separate from its number.</span>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div id="div2" class="hide">
+                                          Przekierowanie do seriwsu PayPal nastąpi po podsumowaniu zamówienia.
+                                        </div>
+                                       
+                                        <div class="panel-footer">
+                                            <button type="button" class="btn2 back-btn2" id="prevBtn" onclick="nextPrev(-1)">Poprzednia</button>
+                                            <button  type="button" class="btn2 next-btn2" id="nextBtn" onclick="nextPrev(1) ">Następna</button>
+                                          </div>
+                                      
+                                        </div>
+
+
+
+
+                               
+                                        <div class="panel-body">
+                                       
+                                          <div class="progress-bar">
+                                            <div class="step active"></div>
+                                            <div class="step" content="Płatność"></div>
+                                            <div class="step"></div>
+                                          </div>
+
+            
+                  
+                    <div class="row">
+                        <label > Wybierz adres z zapisanych adresów, lub uzupełnij formularz poniżej, jeśli chcesz otrzymać zamówienie na inny adres.</label>
+                        
+                        <a id="kafelek" class="radio-input">
+                          <table >
+                              <col width="500">
+                              <col width="10">
+                              <tr>
+                                <td></h6>Ulica i numer domu/mieszkania:</h6><input type="hidden" id="ul_nr" value="adr1"> </td>
+                              </tr>
+                              <tr>
+                                <td ><h6>Kod pocztowy:</h6><input type="hidden" id="kod_pocz" value="adr2"/></td>
+                              </tr>
+                           
+                            </table>
+                            <input id="adr_choose" type="radio" name="wybor" value="choose"> Wybierz<br>
+                   
+              
+                     
+                      </a>
+                      
+                     
+                          
+                      <div class="col-50">
+                          <div class="input-fields">
+                              <div class="column-1">
+                                  <div>
+                                  <label for="fname"><i class="fa fa-user"></i> Imię</label>
+                                  <input type="text" id="fname" name="firstname" >
+                                </div>
+                                  <div>
+                                  <label for="str"><i class="fa fa-address-card-o"></i> Ulica</label>
+                                <input type="text" id="str" name="street" >
+                              </div>
+                                <div class="small-inputs">
+                                    <div>
+                                        <label for="kod_pocztowy">Kod pocztowy</label>
+                            <input type="text" id="kod_pocztowy" pattern="[0-9]{5}" name="kod_pocztowy" >
+                                      </div>
+                             
+                                      <div>
+                                          <label for="miasto">Miasto</label>
+                                          <input type="text" id="miasto" name="miasto" >
+                                      </div>
+                                </div>
+                         
+                              </div>
+                              <div class="column-2">
+                                <div>
+                                  <label for="sname"><i class="fa fa-user"></i> Nazwisko</label>
+                                  <input type="text" id="sname" name="surname" >
+                                </div>
+                                <div>
+                                  <label for="adr"><i class="fa fa-address-card-o"></i> Nr domu / nr mieszkania</label>
+                                  <input type="text" id="adr" name="address" >
+                                </div>
+                              </div>
+                            
+
+                      
+                        
+                    
+                      </div>
+                    
+                      
+                      
+                   
+                </div>
+                
+              </div>
+                             
+                                        <div class="panel-footer">
+                                            <button type="button" class="btn2 back-btn2" id="prevBtn" onclick="nextPrev(-1)">Poprzednia</button>
+                                            <button type="button" class="btn2 next-btn2" id="nextBtn" onclick="nextPrev(1)">Następna</button>
+                                          </div>
+                                        </div>
+                             
+                               
+                                
+                                        <div class="panel-body">
+
+                                       
+                                          <div class="progress-bar">
+                                            <div class="step active"></div>
+                                            <div class="step active"></div>
+                                            <div class="step active"></div>
+                                          </div>
+                                          <a id="kafelek">
+                                            <table >
+                                                <col width="500">
+                                                <col width="10">
+                                                <tr>
+                                                  <td></h6>Ulica i numer domu/mieszkania:</h6> </td>
+                                                  <td><div id="adres1"></div> </td>
+                                                </tr>
+                                                <tr>
+                                                  <td ><h6>Kod pocztowy:</h6></td>
+                                                  <td ><div id="adres2"></div></td>
+                                                </tr>
+                                                
+                                              </table>
+                                     
+                                        </a>
+                                        <a id="kafelek">
+                                          <table >
+                                              <col width="500">
+                                              <col width="10">
+                                              <tr>fa
+                                                <td></h6>Metoda płatności: </h6></td>
+                                                <td><div id="platnosc"></div></td>
+                                              </tr>
+                                              
+                                            </table>
+                                   
+                                      </a>
+                                         
+                                       
+                                        <div class="panel-footer">
+                                          <button type="button" class="btn2 back-btn2" id="prevBtn" onclick="nextPrev(-1)">Poprzednia</button>
+                                          <button type="button" class="btn2 next-btn2" id="nextBtn" onclick="nextPrev(1)">Następna</button>
+                                        </div>
+                                      </div>
+                                      <p></p>
+                                      <p></p>
+                                </div>
+                           
+                                 
+                       
+    
+    
+    
+    
+    
+    
+    
+    
+              
+                              </form>
+                            
+
+                                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+            <script src="script.js"></script>
+                                <script>
+                                    var currentTab = 0; // Current tab is set to be the first tab (0)
+                                    showTab(currentTab); // Display the current tab
+                                    var input = document.getElementById("myInput");
+                                    var text = document.getElementById("text");
+                                    input.addEventListener("keyup", function(event) {
+    
+                                    if (event.getModifierState("CapsLock")) {
+                                      text.style.display = "block";
+                                    } else {
+                                      text.style.display = "none"
+                                    }
+                                    });
+                                    function show1(){
+                                    document.getElementById('div1').style.display ='block';
+                                    document.getElementById('div2').style.display ='none';
+                                      }
+                                    function show2(){
+                                    document.getElementById('div2').style.display ='block';
+                                      document.getElementById('div1').style.display ='none';
+                                    }
+                                    function show3(){
+                                    document.getElementById('div2').style.display ='none';
+                                      document.getElementById('div1').style.display ='none';
+                                    }
+                                    window.onload = show3;
+                                    function showTab(n) {
+                                      setInput()
+                                      // This function will display the specified tab of the form...
+                                      var x = document.getElementsByClassName("panel-body");
+                                      x[0].style.display = "none";
+                                      x[1].style.display = "none";
+                                      x[2].style.display = "none";
+                                      x[n].style.display = "block";
+                                      //... and fix the Previous/Next buttons:
+                                      if (n == 0) {
+                                        document.getElementById("prevBtn").style.display = "none";
+                                      } else {
+                                        document.getElementById("prevBtn").style.display = "inline";
+                                      }
+                                      if (n == (x.length - 1)) {
+                                        document.getElementById("nextBtn").innerHTML = "Zakończ";
+                                      } else {
+                                        document.getElementById("nextBtn").innerHTML = "Następna";
+                                      }
+                                      //... and run a function that will display the correct step indicator:
+                                      fixStepIndicator(n)
+                                      
+                                      
+                                    }
+                                    
+                                    function nextPrev(n) {
+                                      // This function will figure out which tab to display
+                                      var x = document.getElementsByClassName("panel-body");                                     
+                                      // Hide the current tab:
+                                      x[currentTab].style.display = "none";
+                                      // Increase or decrease the current tab by 1:
+                                      currentTab = currentTab + n;
+                                      // if you have reached the end of the form...
+                                      if (currentTab >= x.length) {
+                                        // ... the form gets submitted:
+                                        document.getElementById("regForm").submit();
+                                        return false;
+                                      }
+                                      // Otherwise, display the correct tab:
+                                      showTab(currentTab);
+                                    }
+                                    
+                                    function validateForm() {
+                                      valid = true;
+                                      return valid; // return the valid status
+                                    }
+                                    function setInput()
+                                    {
+                                      if(document.getElementById("paypal").checked){
+                                        document.getElementById("platnosc").innerHTML = "Paypal";
+                                      }
+                                      if(document.getElementById("card").checked)
+                                      {
+                                        document.getElementById("platnosc").innerHTML = "Karta";
+                                      }
+                                      if(document.getElementById("adr_choose").checked)
+                                      {
+                                        document.getElementById("adres1").innerHTML = document.getElementById("ul_nr").value;
+                                      document.getElementById("adres2").innerHTML = document.getElementById("kod_pocz").value;
+                                      }
+                                     
+
+                                    }
+                         
+                                    
+                                   
+                                    </script>
+                        
+                      </div>  
+                    
+    
+               
+    
+    
+        </div>
+  
+    
+    
+        </div>
+    
+    
+    
+    
+    
+    <!-- Footer -->
+    <link rel="stylesheet" href="../Z.css">
+    <footer class="page-footer font-small mdb-color lighten-3 pt-4">
+    
+            <!-- Footer Links -->
+            <div class="container text-center text-md-left">
+        
+              <!-- Grid row -->
+              <div class="row">
+        
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
+        
+                  <!-- Content -->
+                  <h5 class="font-weight-bold text-uppercase mb-4">Parę słów</h5>
+                  <p>Jesteśmy firmą działąjącą od niedawna, lecz to nie przeszkadza nam dostarczyć produkt najwyższej klasy.</p>
+                  <p> Spraw, by twoja wymarzona lodówka przestała być marzeniem.</p>
+        
+                </div>
+                <!-- Grid column -->
+        
+                <hr class="clearfix w-100 d-md-none">
+        
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
+        
+                  <!-- Links -->
+                  <h5 class="font-weight-bold text-uppercase mb-4">O Nas</h5>
+        
+                  <ul class="list-unstyled">
+                    <li>
+                      <p>
+                        <a  href="#!">PROJECTS</a>
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <a  href="#!">ABOUT US</a>
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <a  href="#!">BLOG</a>
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <a  href="#!">AWARDS</a>
+                      </p>
+                    </li>
+                  </ul>
+        
+                </div>
+                <!-- Grid column -->
+        
+                <hr class="clearfix w-100 d-md-none">
+        
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+        
+                  <!-- Contact details -->
+                  <h5 class="font-weight-bold text-uppercase mb-4">Adres</h5>
+        
+                  <ul class="list-unstyled">
+                    <li>
+                      <p>
+                        <i class="fas fa-home mr-3"></i> Wrocław, Ślężna 5</p>
+                    </li>
+                    <li>
+                      <p>
+                        <i class="fas fa-envelope mr-3"></i> info@example.com</p>
+                    </li>
+                    <li>
+                      <p>
+                        <i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+                    </li>
+                    <li>
+                      <p>
+                        <i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+                    </li>
+                  </ul>
+        
+                </div>
+                <!-- Grid column -->
+        
+                <hr class="clearfix w-100 d-md-none">
+        
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
+        
+                  <!-- Social buttons -->
+                  <h5 class="font-weight-bold text-uppercase mb-4">Społeczność</h5>
+        
+                  <!-- Facebook -->
+                  <a type="button" class="btn-floating btn-fb">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <!-- Twitter -->
+                  <a type="button" class="btn-floating btn-tw">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <!-- Google +-->
+                  <a type="button" class="btn-floating btn-gplus">
+                    <i class="fab fa-google-plus-g"></i>
+                  </a>
+                  <!-- Dribbble -->
+                  <a type="button" class="btn-floating btn-dribbble">
+                    <i class="fab fa-dribbble"></i>
+                  </a>
+        
+                </div>
+                <!-- Grid column -->
+        
+              </div>
+              <!-- Grid row -->
+        
+            </div>
+            <!-- Footer Links -->
+          </footer>
+          <!-- Footer -->
+        </div>
+                         
+
+          
+        
+
+</body>
+
+
+</html>
